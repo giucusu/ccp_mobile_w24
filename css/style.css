@@ -1,0 +1,87 @@
+:root {
+    --color1: #bba8e5; /* Light purple */
+    --color2: #000000; /* Black */
+    --color3: #000000; /* Black */
+    --color4: #4b0082; /* Dark purple */
+    --color5: #4b0082; /* Dark purple */
+  }
+  
+  body {
+    background-color: var(--color1); /* Background color */
+    color: var(--color2); /* Text color */
+    margin: 1%;
+    font-size: 125%;
+  }
+  
+  h1 {
+    color: var(--color3); /* Heading color */
+    font-weight: bold; /* Bold font weight */
+    font-size: 2em; /* Larger font size */
+  }
+  
+  h2 {
+    font-family: Arial, sans-serif; /* Change font family */
+    font-size: 1.5em; /* Adjust font size */
+  }
+  
+  h3 {
+    font-family: Arial, sans-serif; /* Change font family */
+    font-size: 1.25em; /* Adjust font size */
+  }
+  
+  p {
+    padding: 10px; /* Improved spacing for paragraphs */
+    line-height: 1.5; /* Adjust line height */
+  }
+  
+  a:visited {
+    color: #0000FF; /* Keep link color */
+  }
+  
+  .active {
+    background: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .active a {
+    text-decoration: none;
+  }
+  
+  nav ul li {
+    display: inline-block; /* Use an inline-block display */
+    margin-left: 50px;
+    background-color: #c7f998;
+    padding: 10px;
+    width: 20%;
+    border: 1px solid black;
+    display: inline-block;
+  }
+  
+  img {
+    border: 5px solid #fafafa; /* Border color of your choice */
+    padding: 10px; /* 10px of padding */
+    margin: 20px; /* 20px of margin */
+    border-top-right-radius: 30px; /* Border-top-right-radius of 30px */
+  }
+  
+  header, nav, main, footer {
+    border: 3px solid rgb(255, 255, 255);
+    margin: 10px 0;
+  }
+  
+  .wave-container {
+    position: relative;
+    height: 100%;
+    background-color: var(--color1); /* Match the background color of the body */
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px; /* Adjust the height of the wave */
+    background: url('wave.svg') repeat-x bottom; /* Replace 'wave.svg' with your wave image */
+  }
+  
