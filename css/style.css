@@ -11,6 +11,7 @@ body {
   color: var(--color2);
   margin: 1%;
   font-size: 125%;
+  font: Helvetica, Arial;
 }
 
 h1, h2, h3 {
@@ -66,13 +67,16 @@ img {
 
 .photo-gallery {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #e9ffc0;
+  background-color: #fddeff;
   text-align: center;
   margin-top: 20px;
+  max-width: 100%; /* Set a maximum width */
+
 }
 
 .photo-gallery img {
@@ -89,6 +93,10 @@ img {
 
 .ingredients-and-instructions {
   margin-top: 20px;
+  background-color: #e9ffc0;
+  padding: 20px;
+  border-radius: 10px;
+
 }
 
 .ingredients-and-instructions h3 {
@@ -109,6 +117,11 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.likes-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
 .likes-section ul {
   list-style-type: none;
   padding: 0;
@@ -116,10 +129,18 @@ img {
 }
 
 .likes-section li {
-  display:block;
+  display: inline-block;
   margin: 5px;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: #bdecb6;
+  font-weight: normal;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.likes-section li:hover {
+  background-color: #8ad387;
 }
 
 .name-photo-section {
