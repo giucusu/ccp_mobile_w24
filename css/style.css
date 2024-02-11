@@ -27,7 +27,19 @@ h2 {
   font-size: 1.5em;
 }
 
+.gif {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
 
+@media (prefers-reduced-motion: reduce) {
+  .gif {
+    display: none;
+  }
+}
 p {
   padding: 10px;
   line-height: 1.5;
@@ -90,6 +102,7 @@ img {
 .photo-gallery img:hover {
   transform: scale(1.1);
 }
+
 
 .ingredients-and-instructions {
   margin-top: 20px;
