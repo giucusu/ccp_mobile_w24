@@ -1,87 +1,145 @@
 :root {
-    --color1: #bba8e5; /* Light purple */
-    --color2: #000000; /* Black */
-    --color3: #000000; /* Black */
-    --color4: #4b0082; /* Dark purple */
-    --color5: #4b0082; /* Dark purple */
+  --color1: #bba8e5;
+  --color2: #000000;
+  --color3: #000000;
+  --color4: #4b0082;
+  --color5: #4b0082;
+}
+
+body {
+  background-color: var(--color1);
+  color: var(--color2);
+  margin: 1%;
+  font-size: 125%;
+}
+
+h1, h2, h3 {
+  font-family: Helvetica, Arial;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+
+p {
+  padding: 10px;
+  line-height: 1.5;
+}
+
+a:visited {
+  color: #0000FF;
+}
+
+.active {
+  background: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.active a {
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 50px;
+  background-color: #c7f998;
+  padding: 10px;
+  width: 20%;
+  border: 1px solid black;
+}
+
+img {
+  border: 5px solid #fafafa;
+  padding: 0px;
+  margin: 20px;
+  border-top-right-radius: 30px;
+  width: 300px;
+  height: auto;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #e9ffc0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.photo-gallery img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.1);
+}
+
+.ingredients-and-instructions {
+  margin-top: 20px;
+}
+
+.ingredients-and-instructions h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.ingredients-and-instructions p {
+  margin-bottom: 10px;
+}
+
+.likes-section {
+  background-color: #e9ffc0;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.likes-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.likes-section li {
+  display:block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.name-photo-section {
+  background-color: #e9ffc0;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+h3 {
+  font-size: 1.25em;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  body {
-    background-color: var(--color1); /* Background color */
-    color: var(--color2); /* Text color */
-    margin: 1%;
-    font-size: 125%;
-  }
-  
-  h1 {
-    color: var(--color3); /* Heading color */
-    font-weight: bold; /* Bold font weight */
-    font-size: 2em; /* Larger font size */
-  }
-  
-  h2 {
-    font-family: Arial, sans-serif; /* Change font family */
-    font-size: 1.5em; /* Adjust font size */
-  }
-  
-  h3 {
-    font-family: Arial, sans-serif; /* Change font family */
-    font-size: 1.25em; /* Adjust font size */
-  }
-  
-  p {
-    padding: 10px; /* Improved spacing for paragraphs */
-    line-height: 1.5; /* Adjust line height */
-  }
-  
-  a:visited {
-    color: #0000FF; /* Keep link color */
-  }
-  
-  .active {
-    background: white;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  .active a {
-    text-decoration: none;
-  }
-  
-  nav ul li {
-    display: inline-block; /* Use an inline-block display */
-    margin-left: 50px;
-    background-color: #c7f998;
-    padding: 10px;
-    width: 20%;
-    border: 1px solid black;
-    display: inline-block;
-  }
-  
-  img {
-    border: 5px solid #fafafa; /* Border color of your choice */
-    padding: 10px; /* 10px of padding */
-    margin: 20px; /* 20px of margin */
-    border-top-right-radius: 30px; /* Border-top-right-radius of 30px */
-  }
-  
-  header, nav, main, footer {
-    border: 3px solid rgb(255, 255, 255);
-    margin: 10px 0;
-  }
-  
-  .wave-container {
-    position: relative;
-    height: 100%;
-    background-color: var(--color1); /* Match the background color of the body */
-  }
-  
-  .wave {
+
+.offpage {
     position: absolute;
-    bottom: 0;
+    left: -1000px;
+}
+.onpage {
+    position: relative;
     left: 0;
-    right: 0;
-    height: 150px; /* Adjust the height of the wave */
-    background: url('wave.svg') repeat-x bottom; /* Replace 'wave.svg' with your wave image */
-  }
-  
+}
