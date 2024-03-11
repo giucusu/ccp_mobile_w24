@@ -11,11 +11,11 @@ body {
   color: var(--color2);
   margin: 1%;
   font-size: 125%;
-  font: Helvetica, Arial;
+  font-family: anaheim,sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: Helvetica, Arial;
+  font-family: anaheim,sans-serif;
 }
 
 h1 {
@@ -177,27 +177,41 @@ h3 {
     margin-bottom: 20px;
   }
 
-.offpage {
+  .skip-link {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
     position: absolute;
-    left: -1000px;
-}
-.onpage {
-    position: relative;
-    left: 0;
-}
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background-color: #000;
-  color: #fff;
-  padding: 8px;
-  z-index: 100;
-  text-decoration: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.skip-link:focus {
-  opacity: 1;
-}
+    white-space: nowrap;
+    width: 1px;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    font-family: anaheim,sans-serif;
+    letter-spacing: .15ch;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: .3s ease-in-out,color .3s ease-in-out
+  }
+  
+  .skip-link {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    outline: none;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    z-index: 10
+  }
+  
+  .skip-link {
+    background-color: #000;
+    color: #fff
+  }
